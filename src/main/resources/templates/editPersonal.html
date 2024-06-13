@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Personal Information</title>
+</head>
+<body>
+    
+    <h1>Edit Personal Information</h1>
+    <form th:action="@{/personal/update}" th:object="${personal}" method="post">
+        <!-- Hidden input field for ID -->
+        <input type="hidden" th:field="*{id}" />
+
+        <div>
+            <label>First Name: </label>
+            <input type="text" th:field="*{biography.firstname}" />
+            <div th:if="${#fields.hasErrors('biography.firstname')}" th:errors="*{biography.firstname}"></div>
+        </div>
+        <div>
+            <label>Last Name: </label>
+            <input type="text" th:field="*{biography.lastname}" />
+            <div th:if="${#fields.hasErrors('biography.lastname')}" th:errors="*{biography.lastname}"></div>
+        </div>
+        <div>
+            <label>Age: </label>
+            <input type="number" th:field="*{biography.age}" />
+            <div th:if="${#fields.hasErrors('biography.age')}" th:errors="*{biography.age}"></div>
+        </div>
+        <div>
+            <label>Birthdate: </label>
+            <input type="text" th:field="*{biography.birthdate}" />
+            <div th:if="${#fields.hasErrors('biography.birthdate')}" th:errors="*{biography.birthdate}"></div>
+        </div>
+        <div>
+            <label>Location: </label>
+            <input type="text" th:field="*{biography.location}" />
+            <div th:if="${#fields.hasErrors('biography.location')}" th:errors="*{biography.location}"></div>
+        </div>
+        <div>
+            <label>Country: </label>
+            <input type="text" th:field="*{biography.country}" />
+            <div th:if="${#fields.hasErrors('biography.country')}" th:errors="*{biography.country}"></div>
+        </div>
+        <div>
+            <label>Hobbies: </label>
+            <input type="text" th:field="*{biography.hobbies}" />
+            <div th:if="${#fields.hasErrors('biography.hobbies')}" th:errors="*{biography.hobbies}"></div>
+        </div>
+        <div>
+            <label>Readings: </label>
+            <input type="text" th:field="*{biography.readings}" />
+            <div th:if="${#fields.hasErrors('biography.readings')}" th:errors="*{biography.readings}"></div>
+        </div>
+        <div>
+            <label>Education Level: </label>
+            <input type="text" th:field="*{education.educlevel}" />
+            <div th:if="${#fields.hasErrors('education.educlevel')}" th:errors="*{education.educlevel}"></div>
+        </div>
+        <div>
+            <label>Institution: </label>
+            <input type="text" th:field="*{education.institution}" />
+            <div th:if="${#fields.hasErrors('education.institution')}" th:errors="*{education.institution}"></div>
+        </div>
+        <div>
+            <label>Degree: </label>
+            <input type="text" th:field="*{education.degree}" />
+            <div th:if="${#fields.hasErrors('education.degree')}" th:errors="*{education.degree}"></div>
+        </div>
+        <div>
+            <label>Specialization: </label>
+            <input type="text" th:field="*{education.specialization}" />
+            <div th:if="${#fields.hasErrors('education.specialization')}" th:errors="*{education.specialization}"></div>
+        </div>
+        <div>
+            <label>Year: </label>
+            <input type="text" th:field="*{education.year}" />
+            <div th:if="${#fields.hasErrors('education.year')}" th:errors="*{education.year}"></div>
+        </div>
+        <div>
+            <button type="submit">Save</button>
+            <a href="/personal"><button type="button">Cancel</button></a>
+        </div>
+    </form>
+    <div th:if="${error}">
+        <p th:text="${error}" style="color: red;"></p>
+    </div>
+</body>
+</html>

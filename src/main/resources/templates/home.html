@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Home Page</title>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/home">Home</a></li>
+			<li><a href="/biography">Biography</a></li>
+			<li><a href="/education">Education</a></li>
+			<li><a href="/personal">Personal Information</a></li>
+			<li><a href="/contact">Personal Information</a></li>
+		</ul>
+	</nav>
+	<h1>Home Page</h1>
+	<div th:if="${home != null}">
+		<p th:text="${home.message}">No message available</p>
+		<blockquote th:text="${home.quote}">No quote available</blockquote>
+	</div>
+
+	<!-- Link to Update Page -->
+	<div>
+		<a href="/edit"><button type="button">Update Quote</button></a>
+	</div>
+
+	<div>
+		<h2>Post a Greeting</h2>
+		<form th:action="@{/postMessages}" method="post">
+			<input type="text" name="subject" placeholder="Subject" required />
+			<textarea name="postedMessage" placeholder="Your message" required></textarea>
+			<button type="submit">Post</button>
+		</form>
+	</div>
+
+	<div>
+		<h2>Greetings</h2>
+		<div th:each="postMessage : ${postMessages}">
+			<h3 th:text="${postMessage.subject}">Subject</h3>
+			<p th:text="${postMessage.postedMessage}">Message</p>
+			<p><small th:text="${postMessage.datePosted}">Date Posted</small></p>
+		</div>
+	</div>
+</body>
+
+</html>

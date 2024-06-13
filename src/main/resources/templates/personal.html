@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Personal Page</title>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/home">Home</a></li>
+			<li><a href="/biography">Biography</a></li>
+			<li><a href="/education">Education</a></li>
+			<li><a href="/personal">Personal Information</a></li>
+		</ul>
+	</nav>
+	<!-- Include the navigation menu -->
+	<h1>Personal Information</h1>
+	<div>
+		<h2>Biography</h2>
+		<p>First Name: <span th:text="${personal.biography.firstname}"></span></p>
+		<p>Last Name: <span th:text="${personal.biography.lastname}"></span></p>
+		<p>Age: <span th:text="${personal.biography.age}"></span></p>
+		<p>Birthdate: <span th:text="${personal.biography.birthdate}"></span></p>
+		<p>Location: <span th:text="${personal.biography.location}"></span></p>
+		<p>Country: <span th:text="${personal.biography.country}"></span></p>
+		<p>Hobbies: <span th:each="hobby : ${personal.biography.hobbies}" th:text="${hobby}"></span></p>
+		<p>Readings: <span th:each="reading : ${personal.biography.readings}" th:text="${reading}"></span></p>
+	</div>
+	<div>
+		<h2>Education</h2>
+		<p>Education Level: <span th:text="${personal.education.educlevel}"></span></p>
+		<p>Institution: <span th:text="${personal.education.institution}"></span></p>
+		<p>Degree: <span th:text="${personal.education.degree}"></span></p>
+		<p>Specialization: <span th:text="${personal.education.specialization}"></span></p>
+		<p>Year: <span th:text="${personal.education.year}"></span></p>
+	</div>
+	<a href="/personal/edit">Edit</a>
+</body>
+
+</html>

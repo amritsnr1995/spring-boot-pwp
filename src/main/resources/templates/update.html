@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update Message and Quote</title>
+	<style>
+	        .error {
+	            color: red;
+	            font-weight: bold;
+	        }
+	    </style>
+<!--    <link rel="stylesheet" th:href="@{/css/styles.css}">-->
+</head>
+<body>
+    <h1>Update Message and Quote</h1>
+    <form th:action="@{/update}" th:object="${home}" method="post">
+        <input type="hidden" th:field="*{id}" name="id"/>
+        <label for="message">Message:</label>
+        <input type="text" id="message" th:field="*{message}" maxlength="1000" required/>
+        <div th:if="${#fields.hasErrors('message')}" th:errors="*{message}" class="error"></div>
+        <br/>
+        <label for="quote">Quote:</label>
+        <input type="text" id="quote" th:field="*{quote}" maxlength="1000" required/>
+        <div th:if="${#fields.hasErrors('quote')}" th:errors="*{quote}" class="error"></div>
+        <br/>
+        <button type="submit">Update</button>
+        <a href="/home"><button type="button">Cancel</button></a>
+    </form>
+</body>
+</html>

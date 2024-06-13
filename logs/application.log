@@ -1,0 +1,54 @@
+2024-05-23T10:58:44.564+09:00  INFO 8936 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : Starting SpringBootPwpApplication using Java 21.0.2 with PID 8936 (C:\pleiades\2024-03\workspace\spring-boot-pwp\target\classes started by Amrit Bk in C:\pleiades\2024-03\workspace\spring-boot-pwp)
+2024-05-23T10:58:44.571+09:00 DEBUG 8936 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23T10:58:44.572+09:00  INFO 8936 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T10:58:45.280+09:00  INFO 8936 --- [spring-boot-pwp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T10:58:45.353+09:00  INFO 8936 --- [spring-boot-pwp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2024-05-23T10:58:45.815+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T10:58:45.828+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T10:58:45.828+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T10:58:45.884+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T10:58:45.884+09:00  INFO 8936 --- [spring-boot-pwp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1274 ms
+2024-05-23T10:58:46.016+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-23T10:58:46.083+09:00  INFO 8936 --- [spring-boot-pwp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-23T10:58:46.118+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-23T10:58:46.360+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T10:58:46.388+09:00  INFO 8936 --- [spring-boot-pwp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T10:58:46.672+09:00  INFO 8936 --- [spring-boot-pwp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6de33fde
+2024-05-23T10:58:46.674+09:00  INFO 8936 --- [spring-boot-pwp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T10:58:47.715+09:00  INFO 8936 --- [spring-boot-pwp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-23T10:58:47.818+09:00  INFO 8936 --- [spring-boot-pwp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T10:58:48.188+09:00  WARN 8936 --- [spring-boot-pwp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T10:58:54.150+09:00  INFO 22164 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : Starting SpringBootPwpApplication using Java 21.0.2 with PID 22164 (C:\pleiades\2024-03\workspace\spring-boot-pwp\target\classes started by Amrit Bk in C:\pleiades\2024-03\workspace\spring-boot-pwp)
+2024-05-23T10:58:54.151+09:00 DEBUG 22164 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23T10:58:54.151+09:00  INFO 22164 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T10:58:54.604+09:00  INFO 22164 --- [spring-boot-pwp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T10:58:54.655+09:00  INFO 22164 --- [spring-boot-pwp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 7 JPA repository interfaces.
+2024-05-23T10:58:54.997+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T10:58:55.005+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T10:58:55.006+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T10:58:55.045+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T10:58:55.045+09:00  INFO 22164 --- [spring-boot-pwp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2024-05-23T10:58:55.150+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-23T10:58:55.194+09:00  INFO 22164 --- [spring-boot-pwp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-23T10:58:55.219+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-23T10:58:55.402+09:00  INFO 22164 --- [spring-boot-pwp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T10:58:55.422+09:00  INFO 22164 --- [spring-boot-pwp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T10:58:55.673+09:00  INFO 22164 --- [spring-boot-pwp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb97fe7
+2024-05-23T10:58:55.675+09:00  INFO 22164 --- [spring-boot-pwp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:00:00.468+09:00  INFO 14004 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : Starting SpringBootPwpApplication using Java 21.0.2 with PID 14004 (C:\pleiades\2024-03\workspace\spring-boot-pwp\target\classes started by Amrit Bk in C:\pleiades\2024-03\workspace\spring-boot-pwp)
+2024-05-23T11:00:00.469+09:00 DEBUG 14004 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23T11:00:00.470+09:00  INFO 14004 --- [spring-boot-pwp] [main] c.a.webportal.SpringBootPwpApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:00:00.933+09:00  INFO 14004 --- [spring-boot-pwp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:00:00.989+09:00  INFO 14004 --- [spring-boot-pwp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 7 JPA repository interfaces.
+2024-05-23T11:00:01.360+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:00:01.369+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:00:01.369+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:00:01.409+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:00:01.410+09:00  INFO 14004 --- [spring-boot-pwp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 909 ms
+2024-05-23T11:00:01.517+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-23T11:00:01.560+09:00  INFO 14004 --- [spring-boot-pwp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-23T11:00:01.586+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-23T11:00:01.763+09:00  INFO 14004 --- [spring-boot-pwp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:00:01.785+09:00  INFO 14004 --- [spring-boot-pwp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:00:02.035+09:00  INFO 14004 --- [spring-boot-pwp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb97fe7
+2024-05-23T11:00:02.037+09:00  INFO 14004 --- [spring-boot-pwp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
